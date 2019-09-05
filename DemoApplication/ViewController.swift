@@ -99,7 +99,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.schoolNameLabel.text = school?.name
         cell.schoolAddressLabel.text = school?.address
-        
+
         URLSession.shared.dataTask(with: URL(string: school!.img)!) { data, response, error in
             if error != nil {
                 print("\(error)")
